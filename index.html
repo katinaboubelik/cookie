@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://loja.gsupplementsbrasil.pro/cookies-preferences.html">
-  <meta property="og:title" content="PSkin - Configuração de Cookies">
+  <meta property="og:title" content="SWC - Configuração de Cookies">
   <meta property="og:description" content="Gerencie seus cookies no site SWC para uma melhor navegação.">
   <meta property="og:image" content="https://loja.gsupplementsbrasil.pro/media/images/cookies-banner.png">
   <title>Preferências de Cookies - SWC</title>
@@ -42,6 +42,8 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
+      max-width: 500px;
+      width: 90%;
     }
 
     .banner-container h2 {
@@ -59,6 +61,7 @@
     .action-buttons {
       display: flex;
       justify-content: space-evenly;
+      margin-bottom: 20px;
     }
 
     .button {
@@ -82,6 +85,28 @@
     .button:hover {
       opacity: 0.9;
     }
+    
+    .policy-links {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+    }
+    
+    .policy-button {
+      background-color: transparent;
+      color: #0066cc;
+      border: 1px solid #0066cc;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .policy-button:hover {
+      background-color: #e6f0ff;
+    }
   </style>
 </head>
 <body>
@@ -91,6 +116,12 @@
     <div class="action-buttons">
       <button class="button accept" onclick="handle_conversion_redirect('https://swiftonn.com/')">Aceitar Cookies</button>
       <button class="button reject" onclick="handle_conversion_redirect('https://swiftonn.com/')">Recusar Cookies</button>
+    </div>
+    
+    <div class="policy-links">
+      <button class="policy-button" onclick="handle_conversion_redirect('https://site.swiftonn.com/politicas-de-privacidade')">Políticas de Privacidade</button>
+      <button class="policy-button" onclick="handle_conversion_redirect('https://site.swiftonn.com/termos-de-uso')">Termos de Uso</button>
+      <button class="policy-button" onclick="handle_conversion_redirect('https://site.swiftonn.com/troca-e-devolucao')">Troca e Devolução</button>
     </div>
   </div>
 </body>
